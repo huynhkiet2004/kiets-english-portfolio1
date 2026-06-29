@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huynh Anh Kiet | Content Marketing & Video Editor Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#090D16',
+                        darkCard: '#131926',
+                        neonCyan: '#00F2FE',
+                        neonPurple: '#9B51E0',
+                        neonBlue: '#4FACFE',
+                        customGray: '#94A3B8'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        neonCyan: '0 0 15px rgba(0, 242, 254, 0.35)',
+                        neonPurple: '0 0 15px rgba(155, 81, 224, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .neon-text-cyan {
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+        .neon-text-purple {
+            text-shadow: 0 0 10px rgba(155, 81, 224, 0.5);
+        }
+        .glass-panel {
+            background: rgba(19, 25, 38, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .scrollbar-hidden::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hidden {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-panel border-b border-white/5 py-4 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="#" class="font-heading text-2xl font-black tracking-wider bg-gradient-to-r from-neonCyan to-neonBlue bg-clip-text text-transparent hover:opacity-80 transition duration-300">
+                HAK<span class="text-neonPurple">.</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#about" class="text-customGray hover:text-neonCyan hover:neon-text-cyan transition duration-300">ABOUT</a>
+                <a href="#experience" class="text-customGray hover:text-neonCyan hover:neon-text-cyan transition duration-300">EXPERIENCE</a>
+                <a href="#achievements" class="text-customGray hover:text-neonCyan hover:neon-text-cyan transition duration-300">ACHIEVEMENTS</a>
+                <a href="#projects" class="text-customGray hover:text-neonCyan hover:neon-text-cyan transition duration-300">PROJECTS</a>
+                <a href="#skills" class="text-customGray hover:text-neonCyan hover:neon-text-cyan transition duration-300">SKILLS</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg font-bold text-sm tracking-wide shadow-neonCyan hover:scale-105 transition-all duration-300">
+                    CONTACT NOW
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="block md:hidden text-slate-200 focus:outline-none" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden absolute top-full left-0 w-full glass-panel border-b border-white/10 py-6 px-8 flex flex-col space-y-4 transition duration-300">
+            <a href="#about" class="mobile-link text-lg font-semibold text-customGray hover:text-neonCyan">About</a>
+            <a href="#experience" class="mobile-link text-lg font-semibold text-customGray hover:text-neonCyan">Experience</a>
+            <a href="#achievements" class="mobile-link text-lg font-semibold text-customGray hover:text-neonCyan">Achievements</a>
+            <a href="#projects" class="mobile-link text-lg font-semibold text-customGray hover:text-neonCyan">Projects</a>
+            <a href="#skills" class="mobile-link text-lg font-semibold text-customGray hover:text-neonCyan">Skills</a>
+            <a href="#contact" class="mobile-link px-6 py-3 rounded-xl bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg font-bold tracking-wide text-center">Contact Now</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Page 1) -->
+    <section id="about" class="relative pt-32 pb-20 md:py-36 overflow-hidden flex items-center min-h-screen">
+        <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-neonBlue/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/10 w-96 h-96 bg-neonPurple/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Info Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs md:text-sm font-semibold text-neonCyan tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-neonCyan animate-pulse"></span> Available for new projects
+                </div>
+                <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-black leading-tight tracking-tight uppercase">
+                    HUYNH <span class="bg-gradient-to-r from-neonCyan via-neonBlue to-neonPurple bg-clip-text text-transparent">ANH KIET</span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-semibold tracking-wide text-slate-300">
+                    Content Marketing & <span class="text-neonCyan border-b-2 border-neonCyan/30">Video Editor</span>
+                </p>
+                <p class="text-sm sm:text-base text-customGray max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                    Digital content specialist with <strong class="text-white">2 years</strong> of experience in commercial PowerPoint design, <strong class="text-white">1 year</strong> of channel growth driving millions of views (managing a YouTube Silver Play Button), and <strong class="text-white">3 years</strong> of multi-platform video post-production.
+                </p>
+
+                <!-- Quick Metrics Grid -->
+                <div class="grid grid-cols-3 gap-4 max-w-md pt-4 mx-auto lg:mx-0">
+                    <div class="p-4 rounded-2xl glass-panel text-center">
+                        <div class="text-2xl sm:text-3xl font-heading font-black text-neonCyan" data-target="3">0</div>
+                        <div class="text-[10px] sm:text-xs text-customGray tracking-widest font-semibold uppercase mt-1">Years as Editor</div>
+                    </div>
+                    <div class="p-4 rounded-2xl glass-panel text-center">
+                        <div class="text-2xl sm:text-3xl font-heading font-black text-neonBlue" data-target="100">0</div>
+                        <div class="text-[10px] sm:text-xs text-customGray tracking-widest font-semibold uppercase mt-1">Million Views</div>
+                    </div>
+                    <div class="p-4 rounded-2xl glass-panel text-center">
+                        <div class="text-2xl sm:text-3xl font-heading font-black text-neonPurple" data-target="50">0</div>
+                        <div class="text-[10px] sm:text-xs text-customGray tracking-widest font-semibold uppercase mt-1">PPT Projects</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                    <a href="#projects" class="px-8 py-4 rounded-xl bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg font-bold tracking-wide text-center shadow-neonCyan hover:scale-105 transition duration-300">
+                        VIEW FEATURED PROJECTS
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-xl border border-white/15 hover:bg-white/5 font-semibold tracking-wide text-center transition duration-300">
+                        GET IN TOUCH
+                    </a>
+                </div>
+
+                <!-- Fast Contacts -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-6 text-xs text-customGray">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-neonCyan"></i> huynhkiet2004@gmail.com</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-phone text-neonBlue"></i> 0912845379</span>
+                    <span class="flex items-center gap-2"><i class="fa-brands fa-linkedin text-neonPurple"></i> /in/kiethuynh666</span>
+                </div>
+            </div>
+
+            <!-- Right Photo Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 h-[460px] sm:w-[360px] sm:h-[550px] group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-neonCyan via-neonBlue to-neonPurple rounded-[3rem] rotate-3 opacity-30 blur-lg group-hover:rotate-6 transition-all duration-500"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-neonCyan via-neonBlue to-neonPurple rounded-[3rem] -rotate-2 group-hover:rotate-0 transition-all duration-500"></div>
+                    
+                    <!-- Main Frame Box -->
+                    <div class="absolute inset-2 bg-darkCard rounded-[2.5rem] overflow-hidden border border-white/10 flex flex-col items-center justify-between p-6 sm:p-8 text-center">
+                        
+                        <!-- Portrait Image from Google Drive -->
+                        <div class="relative w-44 h-56 sm:w-52 sm:h-64 rounded-[2rem] bg-gradient-to-br from-neonCyan to-neonPurple p-1 shadow-neonCyan overflow-hidden">
+                            <img id="avatarImage" class="w-full h-full object-cover rounded-[1.75rem]" src="https://lh3.googleusercontent.com/d/1l2fs4B40X5Tq4miGyhB5BPDHzQG4Q17o" alt="Huynh Anh Kiet" onerror="this.onerror=null; this.src='https://placehold.co/360x480/131926/00F2FE?text=Huynh+Anh+Kiet';">
+                        </div>
+
+                        <div class="w-full space-y-1">
+                            <h3 class="font-heading text-xl sm:text-2xl font-bold text-slate-100">Huynh Anh Kiet</h3>
+                            <p class="text-xs text-neonCyan tracking-wider uppercase font-semibold">Systematic Creativity</p>
+                        </div>
+                        
+                        <div class="space-y-3 w-full text-left text-xs bg-darkBg/50 p-4 rounded-2xl border border-white/5">
+                            <div class="flex justify-between border-b border-white/5 pb-1.5">
+                                <span class="text-customGray">Education:</span>
+                                <span class="text-slate-200 font-semibold text-right">Univ. of Finance - Marketing</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/5 pb-1.5">
+                                <span class="text-customGray">Languages:</span>
+                                <span class="text-slate-200 font-semibold text-right">Aptis B2 (English)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-customGray">Certifications:</span>
+                                <span class="text-slate-200 font-semibold text-right">Basic IT Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE -->
+    <section id="experience" class="py-20 relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-5xl font-black tracking-tight uppercase">
+                    CAREER <span class="bg-gradient-to-r from-neonPurple to-neonBlue bg-clip-text text-transparent">JOURNEY</span>
+                </h2>
+                <p class="text-customGray mt-4">Hands-on experience at media companies and across the global freelance market.</p>
+            </div>
+
+            <!-- Timeline wrapper -->
+            <div class="relative border-l-2 border-white/10 ml-4 md:ml-44 pl-8 space-y-12">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1.5 bg-darkBg border-2 border-neonCyan w-5 h-5 rounded-full flex items-center justify-center shadow-neonCyan"></span>
+                    <span class="hidden md:block absolute right-full mr-14 top-1.5 text-sm font-bold text-neonCyan text-right whitespace-nowrap">05/2025 - 05/2026</span>
+                    
+                    <div class="glass-panel p-6 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">
+                        <span class="block md:hidden text-xs font-bold text-neonCyan mb-2">05/2025 - 05/2026</span>
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-slate-100">Lead Content Manager</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-neonCyan/10 text-neonCyan font-semibold border border-neonCyan/20">Zenzing LLC (Media Company)</span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-customGray list-disc list-inside">
+                            <li><strong class="text-slate-300">Management & Training:</strong> Guided and managed the video editing team, establishing strict QA workflows and delivery schedules to ensure high-velocity output.</li>
+                            <li><strong class="text-slate-300">Multi-Channel Operations:</strong> Directly optimized Facebook Fanpages & YouTube channels, forming creative content directions backed by real-time analytics and growth metrics.</li>
+                            <li><strong class="text-slate-300">AI Integration:</strong> Successfully integrated AI-driven Chinese translation models, slicing localization workflow times by 50% and streamlining cross-border asset creation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1.5 bg-darkBg border-2 border-neonPurple w-5 h-5 rounded-full flex items-center justify-center shadow-neonPurple"></span>
+                    <span class="hidden md:block absolute right-full mr-14 top-1.5 text-sm font-bold text-neonPurple text-right whitespace-nowrap">12/2022 - 12/2024</span>
+                    
+                    <div class="glass-panel p-6 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">
+                        <span class="block md:hidden text-xs font-bold text-neonPurple mb-2">12/2022 - 12/2024</span>
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-slate-100">Design Specialist</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-neonPurple/10 text-neonPurple font-semibold border border-neonPurple/20">Pao Poi PowerPoint</span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-customGray list-disc list-inside">
+                            <li><strong class="text-slate-300">Commercial Design:</strong> Formulated strategic presentations, venture-grade Pitch Decks, and high-conversion Sales Decks for businesses and startups.</li>
+                            <li><strong class="text-slate-300">Service Management:</strong> Consulted directly with clients to map visual narratives and structural layouts, managing strict quality controls prior to delivery.</li>
+                            <li><strong class="text-slate-300">High Productivity:</strong> Personally designed and shipped over 50+ unique digital assets supporting client online marketing initiatives.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1.5 bg-darkBg border-2 border-neonBlue w-5 h-5 rounded-full flex items-center justify-center"></span>
+                    <span class="hidden md:block absolute right-full mr-14 top-1.5 text-sm font-bold text-neonBlue text-right whitespace-nowrap">12/2022 - Present</span>
+                    
+                    <div class="glass-panel p-6 rounded-2xl border border-white/10 hover:bg-white/5 transition duration-300">
+                        <span class="block md:hidden text-xs font-bold text-neonBlue mb-2">12/2022 - Present</span>
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <h3 class="text-xl font-bold text-slate-100">Freelance Video Editor & Designer</h3>
+                            <span class="px-3 py-1 text-xs rounded-full bg-neonBlue/10 text-neonBlue font-semibold border border-neonBlue/20">Global Freelance</span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-customGray list-disc list-inside">
+                            <li><strong class="text-slate-300">Short-form Ads:</strong> Crafted engaging vertical shorts optimized for conversion on Facebook, TikTok, and YouTube Shorts ad campaigns.</li>
+                            <li><strong class="text-slate-300">Podcast & Gaming:</strong> Produced polished long-form edits, managing precise dialogue pacing, audio levels, sound design, and active subtitling.</li>
+                            <li><strong class="text-slate-300">US Market Focus:</strong> Partnered with overseas clients to create long-form gaming reviews, playthrough highlights, and eye-catching promotional posters.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & MILESTONES -->
+    <section id="achievements" class="py-20 bg-darkCard/30 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-3xl md:text-5xl font-black tracking-tight uppercase">
+                    KEY <span class="bg-gradient-to-r from-neonCyan to-neonBlue bg-clip-text text-transparent">ACHIEVEMENTS</span>
+                </h2>
+                <p class="text-customGray mt-4">Real results and audience growth demonstrated through my professional projects.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <!-- YouTube Play Button Card -->
+                <div class="lg:col-span-12 glass-panel p-8 rounded-3xl border border-white/10 relative overflow-hidden group hover:border-neonCyan/50 transition duration-500 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-neonCyan/10 rounded-full blur-[60px] pointer-events-none group-hover:bg-neonCyan/20 transition duration-500"></div>
+                    <div class="space-y-4 max-w-3xl">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-semibold tracking-wider uppercase">
+                            <i class="fa-brands fa-youtube"></i> YouTube Silver Creator Award
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-heading font-black leading-tight uppercase">OPERATED CHANNELS TO A <span class="text-neonCyan">YOUTUBE SILVER BUTTON</span></h3>
+                        <p class="text-customGray text-sm leading-relaxed">
+                            Contributed directly to strategic workflow optimization and editing team leadership at Zenzing LLC, successfully helping grow client channels past the prestigious YouTube Silver Play Button threshold.
+                        </p>
+                    </div>
+                    <div class="shrink-0 flex items-center gap-6 bg-darkBg/60 p-5 rounded-2xl border border-white/5 w-full md:w-auto">
+                        <div class="w-16 h-16 shrink-0 bg-gradient-to-br from-slate-200 to-slate-400 rounded-xl flex items-center justify-center text-3xl text-darkBg shadow-lg transform group-hover:scale-110 transition duration-500 font-bold">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Advanced Channel Operation</div>
+                            <div class="text-xs text-customGray mt-0.5">Over 400K+ long-form views, 10M+ Shorts views</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1. YOUTUBE CHANNEL NETWORK -->
+                <div class="lg:col-span-12 glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:border-neonCyan/50 transition duration-500 group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <h4 class="text-lg font-heading font-bold text-neonCyan uppercase tracking-wider">YouTube Channel Network</h4>
+                            <span class="px-3 py-1.5 rounded-full bg-neonCyan/10 border border-neonCyan/20 text-xs font-bold text-neonCyan uppercase tracking-widest animate-pulse">1.5M+ Subscribers</span>
+                        </div>
+                        <p class="text-sm text-customGray leading-relaxed mb-6">
+                            Below is the real YouTube channel network I managed, edited, and optimized for distribution, perfectly balanced in dynamic layout alignments:
+                        </p>
+                        
+                        <!-- Visual Grid -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                            <!-- 1. Xinh Het Nac -->
+                            <a href="https://www.youtube.com/@XinhHetNac.official" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">XH</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Xinh Het Nac</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@XinhHetNac.official</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">312K</span>
+                                </div>
+                            </a>
+
+                            <!-- 2. Ky Tri Gioi -->
+                            <a href="https://www.youtube.com/@KyTriGioi" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">KT</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Ky Tri Gioi</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@KyTriGioi</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">256K</span>
+                                </div>
+                            </a>
+
+                            <!-- 3. Gau Tho Than -->
+                            <a href="https://www.youtube.com/@GauThoThan" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">GT</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Gau Tho Than</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@GauThoThan</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">198K</span>
+                                </div>
+                            </a>
+
+                            <!-- 4. Nhat Ky Lam Dep -->
+                            <a href="https://www.youtube.com/@Nhatkylamdep.official" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">NK</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Nhat Ky Lam Dep</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@Nhatkylamdep.official</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">196K</span>
+                                </div>
+                            </a>
+
+                            <!-- 5. Tang Tu Vien -->
+                            <a href="https://www.youtube.com/@T%C3%A0ngT%E1%BB%B1Vi%C3%AAn" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">TV</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Tang Tu Vien</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@TangTuVien</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">177K</span>
+                                </div>
+                            </a>
+
+                            <!-- 6. Mi Lanh Lung -->
+                            <a href="https://www.youtube.com/@MiLanhLung.official" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">ML</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Mi Lanh Lung</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@MiLanhLung.official</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">156K</span>
+                                </div>
+                            </a>
+
+                            <!-- 7. Gio Va May -->
+                            <a href="https://www.youtube.com/@giovamay.official" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">GM</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Gio Va May</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@giovamay.official</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">134K</span>
+                                </div>
+                            </a>
+
+                            <!-- 8. Meow Cosplay -->
+                            <a href="https://www.youtube.com/@MeowCosplay.official" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonCyan/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonCyan/10 flex items-center justify-center text-neonCyan text-xs font-bold">MC</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonCyan transition truncate">Meow Cosplay</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">@MeowCosplay.official</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Subscribers</span>
+                                    <span class="font-extrabold text-neonCyan">79.4K</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. FACEBOOK OPERATION NETWORK -->
+                <div class="lg:col-span-12 glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between hover:border-neonPurple/50 transition duration-500 group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <h4 class="text-lg font-heading font-bold text-neonPurple uppercase tracking-wider">Facebook Operations Network</h4>
+                            <span class="px-3 py-1.5 rounded-full bg-neonPurple/10 border border-neonPurple/20 text-xs font-bold text-neonPurple uppercase tracking-widest animate-pulse">316K+ Followers</span>
+                        </div>
+                        <p class="text-sm text-customGray leading-relaxed mb-6">
+                            I directly managed, scripted, and optimized vertical content and short videos for this massive fanpage ecosystem (Click any card to view):
+                        </p>
+                        
+                        <!-- Visual Grid -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                            <!-- 1. Xinh Het Nac -->
+                            <a href="https://www.facebook.com/profile.php?id=61568282874337" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">XH</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Xinh Het Nac</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Beauty & Cosmetics</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">151K</span>
+                                </div>
+                            </a>
+
+                            <!-- 2. Lam dep cuc de -->
+                            <a href="https://www.facebook.com/profile.php?id=61573512548840" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">LD</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Lam dep cực de</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Content Creation</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">76K</span>
+                                </div>
+                            </a>
+
+                            <!-- 3. Gio Va May -->
+                            <a href="https://www.facebook.com/profile.php?id=100080137962558" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">GM</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Gio Va May</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Gen Z Gadgets</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">30K</span>
+                                </div>
+                            </a>
+
+                            <!-- 4. Co Tu Lam Dep -->
+                            <a href="https://www.facebook.com/profile.php?id=61561013608932" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">CT</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Co Tu Lam Dep</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Beauty Content</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">21K</span>
+                                </div>
+                            </a>
+
+                            <!-- 5. Misu On Ma -->
+                            <a href="https://www.facebook.com/profile.php?id=61579616331037" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">MS</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Misu On Ma</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Humor & Lifestyle</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">17K</span>
+                                </div>
+                            </a>
+
+                            <!-- 6. Tho Thoi Cung Xinh -->
+                            <a href="https://www.facebook.com/thothoicungxinh" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">TT</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Tho Thoi Cung Xinh</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Beauty & Self-care</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">14K</span>
+                                </div>
+                            </a>
+
+                            <!-- 7. Tieu Moc Nhi -->
+                            <a href="https://www.facebook.com/profile.php?id=61581791714710" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">TM</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Tieu Moc Nhi</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Humor & Couples</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">6.4K</span>
+                                </div>
+                            </a>
+
+                            <!-- 8. Pao Poi PowerPoint -->
+                            <a href="https://www.facebook.com/paopoi365" target="_blank" class="group/page p-4 rounded-2xl bg-white/5 border border-white/5 hover:border-neonPurple/50 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between h-32">
+                                <div class="flex items-center justify-between">
+                                    <span class="w-8 h-8 rounded-full bg-neonPurple/10 flex items-center justify-center text-neonPurple text-xs font-bold">PP</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-customGray opacity-0 group-hover/page:opacity-100 transition duration-300"></i>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="text-xs font-bold text-slate-100 group-hover/page:text-neonPurple transition truncate">Pao Poi PowerPoint</div>
+                                    <div class="text-[9px] text-customGray mt-0.5">Design & Slides</div>
+                                </div>
+                                <div class="border-t border-white/5 pt-1.5 flex justify-between items-center text-[10px] mt-1">
+                                    <span class="text-customGray">Followers</span>
+                                    <span class="font-extrabold text-neonPurple">1K+</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-darkCard/30 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-heading text-3xl md:text-5xl font-black tracking-tight uppercase">
+                    FEATURED <span class="bg-gradient-to-r from-neonCyan to-neonPurple bg-clip-text text-transparent">PORTFOLIO</span>
+                </h2>
+                <p class="text-customGray mt-4">All project cards are active. Click anywhere on a card to open the original HD asset on Google Drive.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterProjects('all', this)" class="project-tab-btn active px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wider uppercase border border-white/10 bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg shadow-neonCyan transition duration-300">
+                    ALL
+                </button>
+                <button onclick="filterProjects('shorts', this)" class="project-tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wider uppercase border border-white/10 text-customGray hover:text-white hover:border-white/20 transition duration-300">
+                    SHORT-FORM VIDEOS (9:16)
+                </button>
+                <button onclick="filterProjects('long', this)" class="project-tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wider uppercase border border-white/10 text-customGray hover:text-white hover:border-white/20 transition duration-300">
+                    YOUTUBE / PODCAST / VLOG
+                </button>
+                <button onclick="filterProjects('ppt', this)" class="project-tab-btn px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wider uppercase border border-white/10 text-customGray hover:text-white hover:border-white/20 transition duration-300">
+                    POWERPOINT DESIGN
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Card 1: Review Đồ Công Nghệ (Shorts - CapCut - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1d5ohx5cwFElXZEDthRtN4iqnLLQkvW7V/view?usp=sharing" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonCyan/50 transition-all duration-300 flex flex-col justify-between" data-category="shorts">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonCyan/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-mobile-screen text-5xl text-neonCyan"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonCyan/20 border-2 border-neonCyan flex items-center justify-center text-neonCyan group-hover:scale-110 group-hover:bg-neonCyan group-hover:text-darkBg shadow-lg shadow-neonCyan/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonCyan font-bold">
+                            <i class="fa-solid fa-bolt animate-pulse"></i> Shorts / TikTok
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonCyan transition">Tech & Gaming Controller Review</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">High-energy product review vertical video, packed with fast cuts, seamless zooms, and dynamic captions.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonCyan font-bold"><i class="fa-solid fa-user mr-1"></i> Personal Project</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2: Video Podcast Đàm Thoại (Shorts - CapCut - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1d4Ydy1EQ_8MPQBdBVmWoe-FSitUm2ENX/view?usp=sharing" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonCyan/50 transition-all duration-300 flex flex-col justify-between" data-category="shorts">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonCyan/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-microphone text-5xl text-neonCyan"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonCyan/20 border-2 border-neonCyan flex items-center justify-center text-neonCyan group-hover:scale-110 group-hover:bg-neonCyan group-hover:text-darkBg shadow-lg shadow-neonCyan/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonCyan font-bold">
+                            <i class="fa-solid fa-microphone animate-pulse"></i> Shorts / TikTok
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonCyan transition">Conversational Lifestyle Podcast</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Engaging social podcast shorts designed with clean layout structures, custom sound effects, and stylized subtitles.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonCyan font-bold"><i class="fa-solid fa-microphone mr-1"></i> Podcast Shorts</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3: Princess Amelia Vlog (CapCut - Direct Link) -->
+                <a href="https://drive.google.com/file/d/17TbaLm7xocb5tNIEWjL83viIA_4BoMTz/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonPurple/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonPurple/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fa-solid fa-compass text-6xl text-neonPurple"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonPurple/20 border-2 border-neonPurple flex flex-col items-center justify-center text-neonPurple group-hover:scale-110 group-hover:bg-neonPurple group-hover:text-darkBg shadow-lg shadow-neonPurple/30 transition-all duration-300">
+                            <i class="fa-solid fa-play text-xl ml-1"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonPurple font-bold">
+                            <i class="fa-solid fa-video animate-pulse"></i> Vlog / YouTube
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonPurple transition">Lifestyle Travel Vlog - Princess Amelia</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Clipped with a warm cinematic atmosphere, balancing soft audio grading, fluid pacing, and high narrative retention.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonPurple font-bold"><i class="fa-solid fa-eye mr-1"></i> 800K+ Views</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3B: Vietnam Travel Vlog (US Client) (CapCut - Direct Link) -->
+                <a href="https://drive.google.com/file/d/11kJHglsk6rK9dKr1ZM4OxI5hI6kwlOlo/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-amber-400/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-amber-500/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <i class="fa-solid fa-earth-americas text-6xl text-amber-400"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-amber-400/20 border-2 border-amber-400 flex flex-col items-center justify-center text-amber-400 group-hover:scale-110 group-hover:bg-amber-400 group-hover:text-darkBg shadow-lg shadow-amber-400/30 transition-all duration-300">
+                            <i class="fa-solid fa-play text-xl ml-1"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-amber-400 font-bold">
+                            <i class="fa-solid fa-plane animate-pulse"></i> Vlog / US Client
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-amber-400 transition">Vietnam Experience Travel Vlog</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">High-end tourism showcase created for a US client. Features vivid color tuning, upbeat modern rhythms, and stylish slide transitions.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-amber-400 font-bold"><i class="fa-solid fa-globe mr-1"></i> US-Based Partner</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 4: Gaming Wu's World 1 (CapCut - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1C4QJrfARKNGq09FFpFJCNMeiH4iuQa6W/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonBlue/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonBlue/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-gamepad text-5xl text-neonBlue"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonBlue/20 border-2 border-neonBlue flex items-center justify-center text-neonBlue group-hover:scale-110 group-hover:bg-neonBlue group-hover:text-darkBg shadow-lg shadow-neonBlue/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonBlue font-bold">
+                            <i class="fa-solid fa-gamepad animate-pulse"></i> Gaming / Wu's World (Pt. 1)
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonBlue transition">Gaming Highlights & Commentary (Part 1)</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Dynamic long-form gameplay compilation loaded with punchy sound effects, zoom zooms, and humorous meme drops.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonBlue font-bold"><i class="fa-solid fa-star mr-1"></i> US Collaboration</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 5: Gaming Wu's World 2 (CapCut - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1zRlyIvzDJKl9QvjkUfsYGp7BB9ng5RtJ/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonBlue/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonBlue/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-headset text-5xl text-neonBlue"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonBlue/20 border-2 border-neonBlue flex items-center justify-center text-neonBlue group-hover:scale-110 group-hover:bg-neonBlue group-hover:text-darkBg shadow-lg shadow-neonBlue/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonBlue font-bold">
+                            <i class="fa-solid fa-gamepad animate-pulse"></i> Gaming / Wu's World (Pt. 2)
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonBlue transition">Gaming Highlights & Commentary (Part 2)</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Features quick frame matching during key action sequences, highlighting gamer emotional responses and reactions.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonBlue font-bold"><i class="fa-solid fa-star mr-1"></i> US Collaboration</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 6: LG Vina Cosmetic 1 (Premiere Pro - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1QkCnZ8xfrNmXz1bl-8yyis0BPPqlZbI0/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonPurple/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonPurple/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-wand-magic-sparkles text-5xl text-neonPurple"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonPurple/20 border-2 border-neonPurple flex items-center justify-center text-neonPurple group-hover:scale-110 group-hover:bg-neonPurple group-hover:text-darkBg shadow-lg shadow-neonPurple/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonPurple font-bold">
+                            <i class="fa-solid fa-face-smile animate-pulse"></i> Cosmetics / YouTube (Pt. 1)
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonPurple transition">LG Vina Cosmetics Review (Part 1)</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Deep commercial review video featuring elegant skin-tone color grading to maximize product appeal.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonPurple font-bold"><i class="fa-solid fa-award mr-1"></i> LG Vina</span>
+                            <span class="text-customGray font-semibold">Tool: Premiere Pro</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 7: LG Vina Cosmetic 2 (Premiere Pro - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1Ib51_uqm2aiFSnccAkz38QBV_9iirGMt/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonPurple/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonPurple/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-sparkles text-5xl text-neonPurple"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonPurple/20 border-2 border-neonPurple flex items-center justify-center text-neonPurple group-hover:scale-110 group-hover:bg-neonPurple group-hover:text-darkBg shadow-lg shadow-neonPurple/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonPurple font-bold">
+                            <i class="fa-solid fa-face-smile animate-pulse"></i> Cosmetics / YouTube (Pt. 2)
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonPurple transition">LG Vina Cosmetics Review (Part 2)</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Enhanced with polished voiceovers explaining core features clearly, coupled with vibrant transitions.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonPurple font-bold"><i class="fa-solid fa-award mr-1"></i> LG Vina</span>
+                            <span class="text-customGray font-semibold">Tool: Premiere Pro</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 8: Music Dance Performance CUS Crew (Premiere Pro - Direct Link) -->
+                <a href="https://drive.google.com/file/d/1RH4YNK8PxpBqhqwRm-47TkSAOVsfarbL/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonCyan/50 transition-all duration-300 flex flex-col justify-between" data-category="long">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonCyan/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-music text-5xl text-neonCyan"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonCyan/20 border-2 border-neonCyan flex items-center justify-center text-neonCyan group-hover:scale-110 group-hover:bg-neonCyan group-hover:text-darkBg shadow-lg shadow-neonCyan/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonCyan font-bold">
+                            <i class="fa-solid fa-music animate-pulse"></i> Dance / UFM Crew Performance
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonCyan transition">Music & Dance Performance - CUS Crew</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Captivating live capture editing for University of Finance - Marketing (UFM). Features rhythmic pacing matching complex dance beats.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonCyan font-bold"><i class="fa-solid fa-graduation-cap mr-1"></i> UFM</span>
+                            <span class="text-customGray font-semibold">Tool: Premiere Pro</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 9: PowerPoint Presentation -->
+                <a href="https://drive.google.com/drive/folders/1XkePQZxPDwACA_MlCV3g1I2qfTGx-aB9?usp=sharing" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-neonPurple/50 transition-all duration-300 flex flex-col justify-between" data-category="ppt">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-neonPurple/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-file-powerpoint text-5xl text-neonPurple"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-neonPurple/20 border-2 border-neonPurple flex items-center justify-center text-neonPurple group-hover:scale-110 group-hover:bg-neonPurple group-hover:text-darkBg shadow-lg shadow-neonPurple/30 transition-all duration-300">
+                            <i class="fa-solid fa-folder-open text-2xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-neonPurple font-bold">
+                            <i class="fa-solid fa-folder"></i> PowerPoint Portfolio
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-neonPurple transition">Commercial Slide & Pitch Deck Designs</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">A portfolio of commercial pitch decks, professional reports, and slide designs by Pao Poi PowerPoint (Click to open Drive Folder).</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-neonPurple font-bold"><i class="fa-solid fa-check-double mr-1"></i> View Slides Folder</span>
+                            <span class="text-customGray font-semibold">Tools: PowerPoint / Canva</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & SOFTWARE STACK -->
+    <section id="skills" class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-3xl md:text-5xl font-black tracking-tight uppercase">
+                    CORE <span class="bg-gradient-to-r from-neonCyan via-neonBlue to-neonPurple bg-clip-text text-transparent">COMPETENCIES</span>
+                </h2>
+                <p class="text-customGray mt-4">Professional skills and design software stacks optimized and backed by AI systems.</p>
+            </div>
+
+            <!-- Skills categories grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hard skills -->
+                <div class="glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-neonCyan/10 border border-neonCyan/20 flex items-center justify-center text-neonCyan text-xl mb-6">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-6">Professional Skills</h3>
+                    </div>
+                    <div class="space-y-3 w-full">
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonCyan/30 transition duration-300 group">
+                            <span class="w-2.5 h-2.5 rounded-full bg-neonCyan shadow-neonCyan group-hover:scale-125 transition duration-300"></span>
+                            <span class="text-slate-200 font-medium text-sm">Video Editing & Post-Production</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonCyan/30 transition duration-300 group">
+                            <span class="w-2.5 h-2.5 rounded-full bg-neonCyan shadow-neonCyan group-hover:scale-125 transition duration-300"></span>
+                            <span class="text-slate-200 font-medium text-sm">PowerPoint Slide Design</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonCyan/30 transition duration-300 group">
+                            <span class="w-2.5 h-2.5 rounded-full bg-neonCyan shadow-neonCyan group-hover:scale-125 transition duration-300"></span>
+                            <span class="text-slate-200 font-medium text-sm">Content Marketing & Social Media</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft skills -->
+                <div class="glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-neonPurple/10 border border-neonPurple/20 flex items-center justify-center text-neonPurple text-xl mb-6">
+                            <i class="fa-solid fa-people-arrows"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-6">Workplace Skills</h3>
+                    </div>
+                    <div class="space-y-3 w-full">
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonPurple/30 transition duration-300 group">
+                            <span class="w-2.5 h-2.5 rounded-full bg-neonPurple shadow-neonPurple group-hover:scale-125 transition duration-300"></span>
+                            <span class="text-slate-200 font-medium text-sm">Multitasking & High-Pressure Endurance</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonPurple/30 transition duration-300 group">
+                            <span class="w-2.5 h-2.5 rounded-full bg-neonPurple shadow-neonPurple group-hover:scale-125 transition duration-300"></span>
+                            <span class="text-slate-200 font-medium text-sm">Time Management & Deadline Tracking</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonPurple/30 transition duration-300 group">
+                            <span class="w-2.5 h-2.5 rounded-full bg-neonPurple shadow-neonPurple group-hover:scale-125 transition duration-300"></span>
+                            <span class="text-slate-200 font-medium text-sm">Communication & Client Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software / Tech Stack -->
+                <div class="glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-neonBlue/10 border border-neonBlue/20 flex items-center justify-center text-neonBlue text-xl mb-6">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-6">Tools & Software</h3>
+                        <p class="text-sm text-customGray mb-4">Capable of designing, managing, and automating workflows inside these professional tools:</p>
+                    </div>
+
+                    <!-- Software Badges Grid -->
+                    <div class="grid grid-cols-2 gap-2 mt-2">
+                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-circle text-[8px] text-neonCyan"></i> Adobe Premiere
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-circle text-[8px] text-neonPurple"></i> CapCut
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-circle text-[8px] text-neonBlue"></i> PowerPoint
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-circle text-[8px] text-white"></i> Canva
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-circle text-[8px] text-green-400"></i> ChatGPT
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-circle text-[8px] text-blue-400"></i> Google AI
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-darkCard/30 border-t border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                
+                <!-- Contact info panel -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-neonCyan tracking-widest uppercase mb-2 block">GET IN TOUCH</span>
+                        <h2 class="font-heading text-3xl md:text-5xl font-black leading-tight uppercase">START A <span class="bg-gradient-to-r from-neonCyan to-neonBlue bg-clip-text text-transparent">NEW PROJECT</span></h2>
+                        <p class="text-customGray mt-4 text-sm md:text-base leading-relaxed">
+                            Are you looking for an agile Content Lead, a million-view Video Editor, or a professional PowerPoint Specialist? Reach out now, and I will get back to you within 24 hours.
+                        </p>
+                    </div>
+
+                    <!-- Direct Contacts Cards -->
+                    <div class="mt-8 space-y-4">
+                        <a href="mailto:huynhkiet2004@gmail.com" class="p-4 rounded-2xl glass-panel border border-white/10 flex items-center gap-4 hover:border-neonCyan/50 transition duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-neonCyan/10 border border-neonCyan/20 flex items-center justify-center text-neonCyan">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-customGray">Email Address</div>
+                                <div class="text-sm font-semibold text-white mt-0.5">huynhkiet2004@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:0912845379" class="p-4 rounded-2xl glass-panel border border-white/10 flex items-center gap-4 hover:border-neonBlue/50 transition duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-neonBlue/10 border border-neonBlue/20 flex items-center justify-center text-neonBlue">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-customGray">Phone / Zalo</div>
+                                <div class="text-sm font-semibold text-white mt-0.5">0912845379</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kiethuynh666" target="_blank" class="p-4 rounded-2xl glass-panel border border-white/10 flex items-center gap-4 hover:border-neonPurple/50 transition duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-neonPurple/10 border border-neonPurple/20 flex items-center justify-center text-neonPurple">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-customGray">LinkedIn Profile</div>
+                                <div class="text-sm font-semibold text-white mt-0.5">linkedin.com/in/kiethuynh666</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact form panel -->
+                <div class="lg:col-span-7">
+                    <div class="glass-panel p-8 rounded-3xl border border-white/10 relative">
+                        <div id="formSuccessToast" class="hidden absolute inset-0 bg-darkCard/95 rounded-3xl z-40 flex flex-col items-center justify-center p-8 text-center animate-fade-in">
+                            <div class="w-16 h-16 rounded-full bg-neonCyan/20 border border-neonCyan flex items-center justify-center text-neonCyan text-2xl mb-4 shadow-neonCyan">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <h3 class="text-xl font-bold font-heading text-slate-100">Message Sent Successfully!</h3>
+                            <p class="text-sm text-customGray mt-2 max-w-sm">Thank you for reaching out, Kiet. I will respond as soon as I review your inquiry.</p>
+                            <button onclick="resetContactForm()" class="mt-6 px-6 py-2.5 rounded-xl bg-gradient-to-r from-neonCyan to-neonBlue text-darkBg font-bold text-xs tracking-wider uppercase">Send Another Message</button>
+                        </div>
+
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">Your Full Name</label>
+                                    <input type="text" id="contactName" required placeholder="John Doe" class="w-full bg-white/5 border border-white/10 focus:border-neonCyan focus:ring-1 focus:ring-neonCyan rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition duration-300">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">Email Address</label>
+                                    <input type="email" id="contactEmail" required placeholder="email@domain.com" class="w-full bg-white/5 border border-white/10 focus:border-neonCyan focus:ring-1 focus:ring-neonCyan rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition duration-300">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">Project Subject</label>
+                                <select id="contactSubject" class="w-full bg-darkCard border border-white/10 focus:border-neonCyan focus:ring-1 focus:ring-neonCyan rounded-xl px-4 py-3 text-sm text-slate-300 outline-none transition duration-300">
+                                    <option value="video">Video Editing & Creative Content Production</option>
+                                    <option value="ppt">PowerPoint Slide / Pitch Deck Design</option>
+                                    <option value="lead">Content Lead / Channel Management Collaboration</option>
+                                    <option value="other">Other Work Inquiries</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 tracking-wider uppercase mb-2">Detailed Message</label>
+                                <textarea id="contactMessage" required rows="4" placeholder="I would like to collaborate on designing a fundraising slide deck for our AI Startup..." class="w-full bg-white/5 border border-white/10 focus:border-neonCyan focus:ring-1 focus:ring-neonCyan rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition duration-300 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-neonCyan via-neonBlue to-neonPurple text-darkBg font-bold tracking-wide uppercase shadow-neonCyan hover:scale-[1.02] transition duration-300">
+                                Submit Your Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-customGray">
+            <div class="font-heading text-xl font-black tracking-wider bg-gradient-to-r from-neonCyan to-neonBlue bg-clip-text text-transparent">
+                HAK<span class="text-neonPurple">.</span>
+            </div>
+            <div>
+                © 2026 Huynh Anh Kiet. Designed with inspiration from professional Canva Sites.
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-neonCyan transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-neonCyan transition"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="hover:text-neonCyan transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Floating Toast Container for non-blocking alerts -->
+    <div id="toastNotification" class="fixed bottom-6 right-6 z-50 glass-panel px-6 py-4 rounded-2xl border border-neonCyan/30 shadow-neonCyan hidden transition-all duration-300 transform translate-y-10 opacity-0 flex items-center gap-3">
+        <i class="fa-solid fa-circle-info text-neonCyan text-lg"></i>
+        <span id="toastMessage" class="text-sm font-semibold text-slate-100">Notification from system</span>
+    </div>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // 1. Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (mobileMenu) mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Header scroll decoration
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (header) {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-3', 'shadow-lg');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.add('py-4');
+                    header.classList.remove('py-3', 'shadow-lg');
+                }
+            }
+        });
+
+        // 3. Interactive Project Filter Tabs
+        function filterProjects(category, currentTab) {
+            const tabs = document.querySelectorAll('.project-tab-btn');
+            tabs.forEach(tab => {
+                tab.classList.remove('active', 'bg-gradient-to-r', 'from-neonCyan', 'to-neonBlue', 'text-darkBg', 'shadow-neonCyan');
+                tab.classList.add('text-customGray', 'hover:text-white', 'hover:border-white/20');
+            });
+
+            if (currentTab) {
+                currentTab.classList.remove('text-customGray', 'hover:text-white', 'hover:border-white/20');
+                currentTab.classList.add('active', 'bg-gradient-to-r', 'from-neonCyan', 'to-neonBlue', 'text-darkBg', 'shadow-neonCyan');
+            }
+
+            const projects = document.querySelectorAll('.project-card');
+            projects.forEach(project => {
+                const projectCategory = project.getAttribute('data-category');
+                if (category === 'all' || projectCategory === category) {
+                    project.style.display = 'flex';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+
+        // 4. Number counter animation
+        const counters = document.querySelectorAll('[data-target]');
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const updateCounter = () => {
+                const increment = target / 40;
+                if (count < target) {
+                    count = Math.ceil(count + increment);
+                    counter.innerText = count + '+';
+                    setTimeout(updateCounter, 30);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            };
+            updateCounter();
+        });
+
+        // 5. Safe non-blocking custom Toast notify function
+        function showToastNotification(message) {
+            const toast = document.getElementById('toastNotification');
+            const text = document.getElementById('toastMessage');
+            if (toast && text) {
+                text.innerText = message;
+                toast.classList.remove('hidden');
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-10', 'opacity-0');
+                }, 50);
+                setTimeout(() => {
+                    toast.classList.add('translate-y-10', 'opacity-0');
+                    setTimeout(() => {
+                        toast.classList.add('hidden');
+                    }, 300);
+                }, 3000);
+            }
+        }
+
+        // 6. Form submission simulation
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successToast = document.getElementById('formSuccessToast');
+            if (successToast) successToast.classList.remove('hidden');
+            showToastNotification("Your message has been sent successfully!");
+        }
+
+        function resetContactForm() {
+            const form = document.getElementById('contactForm');
+            const successToast = document.getElementById('formSuccessToast');
+            if (form) form.reset();
+            if (successToast) successToast.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
