@@ -163,20 +163,12 @@
                     <!-- Main Frame Box -->
                     <div class="absolute inset-2 bg-darkCard rounded-[2.5rem] overflow-hidden border border-white/10 flex flex-col items-center justify-between p-6 sm:p-8 text-center">
                         
-                        <!-- Clickable Avatar Container for uploading real photo -->
-                        <div onclick="triggerAvatarUpload()" class="relative w-44 h-56 sm:w-52 sm:h-64 rounded-[2rem] bg-gradient-to-br from-neonCyan to-neonPurple p-1 shadow-neonCyan overflow-hidden cursor-pointer group/avatar transition-transform hover:scale-105" title="Click to upload your portrait">
+                        <!-- Permanent Static Avatar Portrait -->
+                        <div class="relative w-44 h-56 sm:w-52 sm:h-64 rounded-[2rem] bg-gradient-to-br from-neonCyan to-neonPurple p-1 shadow-neonCyan overflow-hidden">
                             <div class="w-full h-full bg-darkBg rounded-[1.75rem] overflow-hidden flex items-center justify-center relative">
-                                <!-- Real photo (Loaded from Drive with local upload backup) -->
+                                <!-- Static Real Photo -->
                                 <img id="userAvatar" class="w-full h-full object-cover rounded-[1.75rem]" src="https://lh3.googleusercontent.com/d/1l2fs4B40X5Tq4miGyhB5BPDHzQG4Q17o" alt="Huynh Anh Kiet" onerror="this.onerror=null; this.src='https://placehold.co/360x480/131926/00F2FE?text=Huynh+Anh+Kiet';">
-                                
-                                <!-- Upload Overlay Icon -->
-                                <div class="absolute inset-0 bg-black/60 rounded-[1.75rem] opacity-0 group-hover/avatar:opacity-100 flex flex-col items-center justify-center text-white text-xs transition-all duration-300">
-                                    <i class="fa-solid fa-camera text-2xl mb-1"></i>
-                                    <span>Upload Portrait</span>
-                                </div>
                             </div>
-                            <!-- Hidden File Input -->
-                            <input type="file" id="avatarFileInput" accept="image/*" class="hidden" onchange="previewAvatar(event)">
                         </div>
 
                         <div class="w-full space-y-1">
@@ -624,6 +616,9 @@
                 <button onclick="filterProjects('long', this)" class="project-tab-btn px-6 py-2.5 rounded-full border border-white/10 text-customGray hover:text-white hover:border-white/20 font-bold text-xs sm:text-sm tracking-wide transition-all duration-300">
                     YOUTUBE / PODCAST / VLOG
                 </button>
+                <button onclick="filterProjects('realestate', this)" class="project-tab-btn px-6 py-2.5 rounded-full border border-white/10 text-customGray hover:text-white hover:border-white/20 font-bold text-xs sm:text-sm tracking-wide transition-all duration-300">
+                    REAL ESTATE VIDEO
+                </button>
                 <button onclick="filterProjects('ppt', this)" class="project-tab-btn px-6 py-2.5 rounded-full border border-white/10 text-customGray hover:text-white hover:border-white/20 font-bold text-xs sm:text-sm tracking-wide transition-all duration-300">
                     POWERPOINT DESIGN
                 </button>
@@ -896,99 +891,177 @@
                     </div>
                 </a>
 
+                <!-- Card 10: Real Estate Tour Part 1 -->
+                <a href="https://drive.google.com/file/d/1G2mr7uoDo-HgtfcyYnnhU2sgY9bYKJ0N/view?usp=sharing" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-emerald-400/50 transition-all duration-300 flex flex-col justify-between" data-category="realestate">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-emerald-500/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-building text-5xl text-emerald-400"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-emerald-400/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-400 group-hover:scale-110 group-hover:bg-emerald-400 group-hover:text-darkBg shadow-lg shadow-emerald-400/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-emerald-400 font-bold">
+                            <i class="fa-solid fa-house-chimney animate-pulse"></i> Real Estate / Tour
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition">Real Estate Property Tour (Part 1)</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">High-end property walkthrough video featuring smooth cinematic camera movements, crisp lighting, and dynamic spatial framing.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-building mr-1"></i> Real Estate</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 11: Real Estate Tour Part 2 -->
+                <a href="https://drive.google.com/file/d/1GHycjaiJh58lxIniveXtTA-iQ9da6LNC/view?usp=sharing" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-emerald-400/50 transition-all duration-300 flex flex-col justify-between" data-category="realestate">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-emerald-500/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-city text-5xl text-emerald-400"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-emerald-400/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-400 group-hover:scale-110 group-hover:bg-emerald-400 group-hover:text-darkBg shadow-lg shadow-emerald-400/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-emerald-400 font-bold">
+                            <i class="fa-solid fa-city animate-pulse"></i> Real Estate / Showcase
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition">Real Estate Property Tour (Part 2)</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Luxury real estate promotional video with refined color grading, immersive room transitions, and elegant tempo.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-building mr-1"></i> Real Estate</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 12: Real Estate Showcase -->
+                <a href="https://drive.google.com/file/d/137Ay7B1Ayopuyf5jVgpv7dQqC03aH0PW/view?usp=drive_link" target="_blank" class="project-card glass-panel rounded-3xl border border-white/10 overflow-hidden group hover:border-emerald-400/50 transition-all duration-300 flex flex-col justify-between" data-category="realestate">
+                    <div class="relative aspect-video bg-slate-950 overflow-hidden rounded-t-3xl flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-darkCard via-slate-950 to-emerald-500/20 opacity-80 group-hover:scale-105 transition-transform duration-500"></div>
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <i class="fa-solid fa-house-chimney-window text-5xl text-emerald-400"></i>
+                        </div>
+                        <div class="relative z-10 w-16 h-16 rounded-full bg-emerald-400/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-400 group-hover:scale-110 group-hover:bg-emerald-400 group-hover:text-darkBg shadow-lg shadow-emerald-400/30 transition-all duration-300">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xl"></i>
+                        </div>
+                        <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 text-xs text-emerald-400 font-bold">
+                            <i class="fa-solid fa-house-chimney-window animate-pulse"></i> Real Estate / Promo
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition">Real Estate Architectural Showcase</h3>
+                        <p class="text-xs text-customGray mt-2 leading-relaxed">Commercial real estate promotional video structured for prospective buyer engagement with clean typography and ambient audio.</p>
+                        <div class="mt-4 flex items-center justify-between text-xs border-t border-white/5 pt-4">
+                            <span class="text-emerald-400 font-bold"><i class="fa-solid fa-building mr-1"></i> Real Estate</span>
+                            <span class="text-customGray font-semibold">Tool: CapCut</span>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
 
-    <!-- SKILLS & SOFTWARE STACK -->
-    <section id="skills" class="py-20 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="font-heading text-3xl md:text-5xl font-black tracking-tight uppercase">
-                    CAPABILITY <span class="bg-gradient-to-r from-neonCyan via-neonBlue to-neonPurple bg-clip-text text-transparent">SYSTEM</span>
+                    SKILLS & <span class="bg-gradient-to-r from-neonCyan via-neonBlue to-neonPurple bg-clip-text text-transparent">COMPETENCIES</span>
                 </h2>
-                <p class="text-customGray mt-4">Professional tech stack and production capabilities accelerated by advanced AI tools.</p>
+                <p class="text-customGray mt-4 text-sm md:text-base">Comprehensive toolkit spanning video editing, content production, and workflow optimization.</p>
             </div>
 
-            <!-- Skills categories grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Hard skills -->
-                <div class="glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Core Competencies -->
+                <div class="glass-panel p-8 rounded-3xl border border-white/10 hover:border-neonCyan/50 transition duration-500 flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-neonCyan/10 border border-neonCyan/20 flex items-center justify-center text-neonCyan text-xl mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-neonCyan/10 border border-neonCyan/20 flex items-center justify-center text-neonCyan text-xl mb-6 shadow-neonCyan">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-6">Core Competencies</h3>
-                    </div>
-                    <div class="space-y-3 w-full">
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonCyan/30 transition duration-300 group">
-                            <span class="w-2.5 h-2.5 rounded-full bg-neonCyan shadow-neonCyan group-hover:scale-125 transition duration-300"></span>
-                            <span class="text-slate-200 font-medium text-sm">Video Editing & Post-Production</span>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonCyan/30 transition duration-300 group">
-                            <span class="w-2.5 h-2.5 rounded-full bg-neonCyan shadow-neonCyan group-hover:scale-125 transition duration-300"></span>
-                            <span class="text-slate-200 font-medium text-sm">PowerPoint Presentation Design</span>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonCyan/30 transition duration-300 group">
-                            <span class="w-2.5 h-2.5 rounded-full bg-neonCyan shadow-neonCyan group-hover:scale-125 transition duration-300"></span>
-                            <span class="text-slate-200 font-medium text-sm">Content Marketing & Social Media</span>
+                        <h3 class="text-xl font-heading font-bold text-slate-100 mb-6">Core Competencies</h3>
+                        <div class="space-y-3">
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonCyan/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonCyan"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Video Editing & Post-Production</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonCyan/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonCyan"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Commercial Presentation Design</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonCyan/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonCyan"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Content Strategy & Social Media</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonCyan/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonCyan"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">AI Workflow Integration</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Soft skills -->
-                <div class="glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+                <!-- Professional Skills -->
+                <div class="glass-panel p-8 rounded-3xl border border-white/10 hover:border-neonPurple/50 transition duration-500 flex flex-col justify-between group">
                     <div>
-                        <div class="w-12 h-12 rounded-2xl bg-neonPurple/10 border border-neonPurple/20 flex items-center justify-center text-neonPurple text-xl mb-6">
-                            <i class="fa-solid fa-people-arrows"></i>
+                        <div class="w-12 h-12 rounded-2xl bg-neonPurple/10 border border-neonPurple/20 flex items-center justify-center text-neonPurple text-xl mb-6 shadow-neonPurple">
+                            <i class="fa-solid fa-user-gear"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-6">Professional Skills</h3>
-                    </div>
-                    <div class="space-y-3 w-full">
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonPurple/30 transition duration-300 group">
-                            <span class="w-2.5 h-2.5 rounded-full bg-neonPurple shadow-neonPurple group-hover:scale-125 transition duration-300"></span>
-                            <span class="text-slate-200 font-medium text-sm">Multitasking & High-Pressure Delivery</span>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonPurple/30 transition duration-300 group">
-                            <span class="w-2.5 h-2.5 rounded-full bg-neonPurple shadow-neonPurple group-hover:scale-125 transition duration-300"></span>
-                            <span class="text-slate-200 font-medium text-sm">Time & Critical Deadline Management</span>
-                        </div>
-                        <div class="p-4 rounded-xl bg-white/5 border border-white/5 flex items-center gap-3 hover:border-neonPurple/30 transition duration-300 group">
-                            <span class="w-2.5 h-2.5 rounded-full bg-neonPurple shadow-neonPurple group-hover:scale-125 transition duration-300"></span>
-                            <span class="text-slate-200 font-medium text-sm">Client Relations & Negotiation</span>
+                        <h3 class="text-xl font-heading font-bold text-slate-100 mb-6">Professional Skills</h3>
+                        <div class="space-y-3">
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonPurple/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonPurple"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Multitasking & High-Pressure Execution</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonPurple/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonPurple"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Time Management & Strict Deadlines</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonPurple/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonPurple"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Client Communication & Consulting</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonPurple/30 transition group-hover:bg-white/10 flex items-center gap-3">
+                                <span class="w-2 h-2 rounded-full bg-neonPurple"></span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200">Team Leadership & Quality Control</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Software / Tech Stack -->
-                <div class="glass-panel p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+                <!-- Software & Tools -->
+                <div class="glass-panel p-8 rounded-3xl border border-white/10 hover:border-neonBlue/50 transition duration-500 flex flex-col justify-between group">
                     <div>
                         <div class="w-12 h-12 rounded-2xl bg-neonBlue/10 border border-neonBlue/20 flex items-center justify-center text-neonBlue text-xl mb-6">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-6">Tools & Technology</h3>
-                        <p class="text-sm text-customGray mb-4">Mastery of professional design suites and modern editing toolkits:</p>
-                    </div>
-
-                    <!-- Software Badges Grid -->
-                    <div class="grid grid-cols-2 gap-2 mt-2">
-                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
-                            <i class="fa-solid fa-circle text-[8px] text-neonCyan"></i> Adobe Premiere
-                        </div>
-                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
-                            <i class="fa-solid fa-circle text-[8px] text-neonPurple"></i> CapCut
-                        </div>
-                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
-                            <i class="fa-solid fa-circle text-[8px] text-neonBlue"></i> PowerPoint
-                        </div>
-                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
-                            <i class="fa-solid fa-circle text-[8px] text-white"></i> Canva
-                        </div>
-                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
-                            <i class="fa-solid fa-circle text-[8px] text-green-400"></i> ChatGPT
-                        </div>
-                        <div class="p-2.5 rounded-xl bg-white/5 border border-white/5 flex items-center gap-2 text-xs">
-                            <i class="fa-solid fa-circle text-[8px] text-blue-400"></i> Google AI
+                        <h3 class="text-xl font-heading font-bold text-slate-100 mb-6">Software & Tools</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonBlue/30 transition flex flex-col items-center justify-center text-center">
+                                <i class="fa-solid fa-film text-neonBlue text-lg mb-1.5"></i>
+                                <span class="text-xs font-bold text-slate-200">CapCut</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonBlue/30 transition flex flex-col items-center justify-center text-center">
+                                <i class="fa-solid fa-video text-neonBlue text-lg mb-1.5"></i>
+                                <span class="text-xs font-bold text-slate-200">Premiere Pro</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonBlue/30 transition flex flex-col items-center justify-center text-center">
+                                <i class="fa-solid fa-file-powerpoint text-neonBlue text-lg mb-1.5"></i>
+                                <span class="text-xs font-bold text-slate-200">PowerPoint</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonBlue/30 transition flex flex-col items-center justify-center text-center">
+                                <i class="fa-solid fa-palette text-neonBlue text-lg mb-1.5"></i>
+                                <span class="text-xs font-bold text-slate-200">Canva</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-neonBlue/30 transition flex flex-col items-center justify-center text-center col-span-2">
+                                <i class="fa-solid fa-robot text-neonBlue text-lg mb-1.5"></i>
+                                <span class="text-xs font-bold text-slate-200">AI Translation & Workflow Tools</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1085,24 +1158,6 @@
             };
             updateCounter();
         });
-
-        // 5. Trigger file explorer when clicking avatar
-        function triggerAvatarUpload() {
-            document.getElementById('avatarFileInput').click();
-        }
-
-        // 6. Read and preview the uploaded local image immediately
-        function previewAvatar(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const userAvatar = document.getElementById('userAvatar');
-                    userAvatar.src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        }
     </script>
 </body>
 </html>
